@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: fangsong;
+}
+
+a {
+  text-decoration: none;
+}
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+header {
+  padding: 20px 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 1px solid hsl(0, 0%, 75%, 0.2);
+}
+#menu-bar {
+  display: none;
+}
+.name a {
+  font-weight: 100;
+  line-height: 1.2;
+  color: white;
+  font-size: x-large;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+nav .link {
+  font-size: 16px;
+  color: white;
+  margin-left: 20px;
+}
+nav #menu-bar {
+  font-size: 25px;
+  color: #fff;
+  margin-left: 20px;
+}
+nav .btn-lang {
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: black;
+  font-size: 1rem;
+  background-color: #fff;
+}
+#slider {
+  background-image: url(/photo/back4.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding: 16.4rem 0rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+#slider .overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+#slider h1 {
+  font-size: 70px;
+  color: #fff;
+}
+#slider p {
+  color: #acacac;
+  font-size: 25px;
+}
+#menu {
+  padding: 5rem 0rem;
+}
+
+.menu-text h3,
+p {
+  text-align: center;
+  font-weight: 50;
+  line-height: 1.2;
+  color: white;
+  padding: 20px 0px;
+}
+#menu .bottom .btn-menu {
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: black;
+  font-size: 1rem;
+  background-color: #fff;
+}
+#menu .bottom {
+  padding: 25px 0px;
+}
+
+#menu .bottom h6,
+p {
+  font-weight: 100;
+  line-height: 1.2;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu .box img {
+  width: 100%;
+  border-radius: 5px;
+}
+#menu .text-end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .link {
+    display: none;
+  }
+  #menu-bar {
+    display: inline-block;
+  }
+  #slider h1 {
+    font-size: 40px;
+  }
+  #slider p {
+    font-size: 16px;
+  }
+
+  nav .btn-lang {
+    padding: 3px 10px;
+  }
+  header {
+    padding: 20px;
+  }
+}
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.icons a {
+  color: white;
+}
+.icons::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, #00e5ff, #04ff9f);
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(100%, 100%);
+  transition: all 0.4s;
+}
+.icons:hover::before {
+  transform: translate(0);
+  animation: anim 0.4s linear;
+}
+@keyframes anim {
+  0%,
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+  50% {
+    width: 50%;
+    height: 50%;
+  }
+}
+#ourchocolate {
+  padding: 5rem 0rem;
+}
+
+#ourchocolate .bottom .btn-menu {
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: black;
+  font-size: 1rem;
+  background-color: #fff;
+}
+#ourchocolate .bottom {
+  padding: 25px 0px;
+}
+
+#ourchocolate .bottom h6,
+p {
+  font-weight: 100;
+  line-height: 1.2;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ourchocolate .box img {
+  width: 100%;
+  border-radius: 5px;
+}
+#ourchocolate .text-end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
